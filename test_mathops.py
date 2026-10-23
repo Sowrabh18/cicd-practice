@@ -15,7 +15,7 @@ def test_divide_by_zero():
 def test_multiply():
     result=multiply(3,4)
 
-    assert result==11
+    assert result==12
 
 
 def test_subtract():
