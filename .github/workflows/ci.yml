@@ -15,7 +15,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pytest
+        run: pip install pytest black ruff
+
+      - name: Check formatting with black
+        run: black --check .
+
+      - name: Lint with ruff
+        run: ruff check .
 
       - name: Run tests
         run: pytest
