@@ -1,7 +1,6 @@
-from mathops import multiply
-from mathops import subtract
-from mathops import divide
 import pytest
+
+from mathops import divide, multiply, subtract
 
 
 def test_divide_by_zero():
